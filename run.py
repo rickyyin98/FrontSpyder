@@ -23,7 +23,7 @@ for i in range(2,52):
         List=soup.find_all("h2",class_="fa-post-title")
 
         for list in List:
-            Final.append([list.find("a").string,"https://frontapp.com/"+list.find("a")['href']])
+            Final.append([list.find("a").string,"https://frontapp.com"+list.find("a")['href']])
     except:
         print("",end="")
 
